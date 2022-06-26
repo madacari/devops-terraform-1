@@ -23,7 +23,7 @@ jobs:
         shell: bash
         working-directory: infra
     outputs:
-      bucket_name: ${{ steps.export-rds.outputs.bucket_name }}
+      bucket_name: ${{ steps.export-bucket.outputs.bucket_name }}
     steps:
     - name: Checkout
       uses: actions/checkout@v3
