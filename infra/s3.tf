@@ -1,19 +1,3 @@
-# Define local variables for s3
-locals {
-  mime_types = {
-    htm  = "text/html"
-    html = "text/html"
-    css  = "text/css"
-    ttf  = "font/ttf"
-    js   = "application/javascript"
-    map  = "application/javascript"
-    json = "application/json"
-    txt  = "text/plain"
-    ico  = "image/vnd.microsoft.icon"
-    png  = "image/png"
-  }
-}
-
 # Create the s3 bucket with policies
 module "sipios_formation_s3" {
   source = "terraform-aws-modules/s3-bucket/aws"
@@ -24,12 +8,12 @@ module "sipios_formation_s3" {
   force_destroy = true
 
   versioning = {
-    enabled = false
+    enabled = false # Chose qu'on va vouloir faire en production
   }
 
   website = {
     index_document = "index.html"
-    error_document = "index.html"
+    error_document = "index.html" # On aura surement un fichier de fallback
   }
 
   # Policies
