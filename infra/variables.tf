@@ -22,7 +22,7 @@ variable "s3" {
   default = {
     "vars" = {
       arn  = "arn:aws:s3:::votre-nom-sipios-formation-s3"
-      name = "votre-nom-sipios-formation-s3"
+      name = "samy-nalbandian-sipios-formation-s3"
     }
   }
 }
