@@ -10,6 +10,7 @@ on:
   pull_request:
     branches: [ "main" ]
 
+# List of job that will be executed
 jobs:
   infra:
     name: 'Setup S3 with Terraform'
