@@ -1,0 +1,386 @@
+
+> test-front@0.1.0 start
+> react-scripts start
+
+Starting the development server...
+
+Failed to compile.
+
+SassError: This file is already being loaded.
+  ╷
+1 │ @import "../App.scss";
+  │         ^^^^^^^^^^^^^
+  ╵
+  src/common/Footer.scss 1:9  @import
+  src/App.scss 3:9            root stylesheet
+assets by path static/js/*.js 1.58 MiB
+  asset static/js/bundle.js 1.57 MiB [emitted] (name: main) 1 related asset
+  asset static/js/node_modules_web-vitals_dist_web-vitals_js.chunk.js 6.89 KiB [emitted] 1 related asset
+asset index.html 1.67 KiB [emitted]
+asset asset-manifest.json 458 bytes [emitted]
+cached modules 1.42 MiB [cached] 110 modules
+runtime modules 31.3 KiB 15 modules
+javascript modules 7.86 KiB
+  modules by path ./src/*.tsx 4.73 KiB
+    ./src/index.tsx 1.77 KiB [built] [code generated]
+    ./src/App.tsx 2.96 KiB [built] [code generated]
+  modules by path ./src/*.scss 3.09 KiB
+    ./src/App.scss 3.05 KiB [code generated]
+    ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/App.scss 39 bytes [built] [code generated] [1 error]
+  ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss 39 bytes [built] [1 error]
+
+ERROR in ./src/App.scss (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/App.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: This file is already being loaded.
+  ╷
+1 │ @import "../App.scss";
+  │         ^^^^^^^^^^^^^
+  ╵
+  src/common/Footer.scss 1:9  @import
+  src/App.scss 3:9            root stylesheet
+SassError: SassError: This file is already being loaded.
+  ╷
+1 │ @import "../App.scss";
+  │         ^^^^^^^^^^^^^
+  ╵
+  src/common/Footer.scss 1:9  @import
+  src/App.scss 3:9            root stylesheet
+    at /home/sam/test/test-front/node_modules/sass-loader/dist/index.js:54:16
+    at Function.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:98993:16)
+    at render_closure1.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:84511:12)
+    at _RootZone.runBinary$3$3 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:29540:18)
+    at _FutureListener.handleError$1 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28062:21)
+    at _Future__propagateToListeners_handleError.call$0 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28369:49)
+    at Object._Future__propagateToListeners (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3901:77)
+    at _Future._completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28215:9)
+    at _AsyncAwaitCompleter.completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:27863:12)
+    at Object._asyncRethrow (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3704:17)
+ @ ./src/App.scss 8:6-373 22:17-24 26:7-21 58:25-39 59:36-47 59:50-64 63:6-73:7 64:54-65 64:68-82 70:42-53 70:56-70 72:21-28 83:0-343 83:0-343 84:22-29 84:33-47 84:50-64 61:4-74:5
+ @ ./src/App.tsx 6:0-20
+ @ ./src/index.tsx 7:0-24 11:33-36
+
+ERROR in ./src/common/Footer.scss (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: This file is already being loaded.
+  ╷
+3 │ @import "common/Footer.scss";
+  │         ^^^^^^^^^^^^^^^^^^^^
+  ╵
+  src/App.scss 3:9            @import
+  src/common/Footer.scss 1:9  root stylesheet
+SassError: SassError: This file is already being loaded.
+  ╷
+3 │ @import "common/Footer.scss";
+  │         ^^^^^^^^^^^^^^^^^^^^
+  ╵
+  src/App.scss 3:9            @import
+  src/common/Footer.scss 1:9  root stylesheet
+    at /home/sam/test/test-front/node_modules/sass-loader/dist/index.js:54:16
+    at Function.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:98993:16)
+    at render_closure1.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:84511:12)
+    at _RootZone.runBinary$3$3 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:29540:18)
+    at _FutureListener.handleError$1 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28062:21)
+    at _Future__propagateToListeners_handleError.call$0 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28369:49)
+    at Object._Future__propagateToListeners (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3901:77)
+    at _Future._completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28215:9)
+    at _AsyncAwaitCompleter.completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:27863:12)
+    at Object._asyncRethrow (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3704:17)
+ @ ./src/common/Footer.scss 8:6-388 22:17-24 26:7-21 58:25-39 59:36-47 59:50-64 63:6-73:7 64:54-65 64:68-82 70:42-53 70:56-70 72:21-28 83:0-358 83:0-358 84:22-29 84:33-47 84:50-64 61:4-74:5
+ @ ./src/common/Footer.tsx 4:0-23
+ @ ./src/App.tsx 7:0-37 55:35-41
+ @ ./src/index.tsx 7:0-24 11:33-36
+
+webpack 5.65.0 compiled with 2 errors in 3099 ms
+Files successfully emitted, waiting for typecheck results...
+Issues checking in progress...
+No issues found.
+Compiling...
+Failed to compile.
+
+SassError: Undefined variable.
+  ╷
+5 │   background-color: $primary;
+  │                     ^^^^^^^^
+  ╵
+  src/common/Footer.scss 5:21  root stylesheet
+assets by status 6.89 KiB [cached] 1 asset
+assets by chunk 1.58 MiB (name: main)
+  asset static/js/bundle.js 1.58 MiB [emitted] (name: main) 1 related asset
+  asset main.4a46baf4f42e3600a6c0.hot-update.js 3.83 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+assets by path *.json 611 bytes
+  asset asset-manifest.json 583 bytes [emitted]
+  asset main.4a46baf4f42e3600a6c0.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+asset index.html 1.67 KiB [emitted]
+Entrypoint main 1.58 MiB (1.56 MiB) = static/js/bundle.js 1.58 MiB main.4a46baf4f42e3600a6c0.hot-update.js 3.83 KiB 2 auxiliary assets
+cached modules 1.42 MiB [cached] 112 modules
+runtime modules 31.3 KiB 15 modules
+javascript modules 4.1 KiB
+  ./src/App.scss 3.05 KiB [code generated]
+  ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/App.scss 1.01 KiB [built] [code generated]
+  ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss 39 bytes [built] [1 error]
+
+ERROR in ./src/common/Footer.scss (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Undefined variable.
+  ╷
+5 │   background-color: $primary;
+  │                     ^^^^^^^^
+  ╵
+  src/common/Footer.scss 5:21  root stylesheet
+SassError: SassError: Undefined variable.
+  ╷
+5 │   background-color: $primary;
+  │                     ^^^^^^^^
+  ╵
+  src/common/Footer.scss 5:21  root stylesheet
+    at /home/sam/test/test-front/node_modules/sass-loader/dist/index.js:54:16
+    at Function.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:98993:16)
+    at render_closure1.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:84511:12)
+    at _RootZone.runBinary$3$3 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:29540:18)
+    at _FutureListener.handleError$1 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28062:21)
+    at _Future__propagateToListeners_handleError.call$0 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28369:49)
+    at Object._Future__propagateToListeners (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3901:77)
+    at _Future._completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28215:9)
+    at _AsyncAwaitCompleter.completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:27863:12)
+    at Object._asyncRethrow (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3704:17)
+ @ ./src/common/Footer.scss 8:6-388 22:17-24 26:7-21 58:25-39 59:36-47 59:50-64 63:6-73:7 64:54-65 64:68-82 70:42-53 70:56-70 72:21-28 83:0-358 83:0-358 84:22-29 84:33-47 84:50-64 61:4-74:5
+ @ ./src/common/Footer.tsx 4:0-23
+ @ ./src/App.tsx 7:0-37 55:35-41
+ @ ./src/index.tsx 7:0-24 11:33-36
+
+webpack 5.65.0 compiled with 1 error in 889 ms
+No issues found.
+Compiling...
+Failed to compile.
+
+SassError: Can't find stylesheet to import.
+  ╷
+1 │ @import "shared/variables";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+  src/common/Footer.scss 1:9  @import
+  src/App.scss 3:9            root stylesheet
+assets by status 6.89 KiB [cached] 1 asset
+assets by chunk 1.58 MiB (name: main)
+  asset static/js/bundle.js 1.57 MiB [emitted] (name: main) 1 related asset
+  asset main.a69ab0df13bd4faa5577.hot-update.js 1.98 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+assets by path *.json 611 bytes
+  asset asset-manifest.json 583 bytes [emitted]
+  asset main.a69ab0df13bd4faa5577.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+asset index.html 1.67 KiB [emitted]
+Entrypoint main 1.58 MiB (1.56 MiB) = static/js/bundle.js 1.57 MiB main.a69ab0df13bd4faa5577.hot-update.js 1.98 KiB 2 auxiliary assets
+cached modules 1.42 MiB [cached] 112 modules
+runtime modules 31.3 KiB 15 modules
+javascript modules 3.12 KiB
+  ./src/App.scss 3.05 KiB [code generated]
+  ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/App.scss 39 bytes [built] [code generated] [1 error]
+  ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss 39 bytes [built] [1 error]
+
+ERROR in ./src/App.scss (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/App.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Can't find stylesheet to import.
+  ╷
+1 │ @import "shared/variables";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+  src/common/Footer.scss 1:9  @import
+  src/App.scss 3:9            root stylesheet
+SassError: SassError: Can't find stylesheet to import.
+  ╷
+1 │ @import "shared/variables";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+  src/common/Footer.scss 1:9  @import
+  src/App.scss 3:9            root stylesheet
+    at /home/sam/test/test-front/node_modules/sass-loader/dist/index.js:54:16
+    at Function.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:98993:16)
+    at render_closure1.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:84511:12)
+    at _RootZone.runBinary$3$3 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:29540:18)
+    at _FutureListener.handleError$1 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28062:21)
+    at _Future__propagateToListeners_handleError.call$0 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28369:49)
+    at Object._Future__propagateToListeners (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3901:77)
+    at _Future._completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28215:9)
+    at _AsyncAwaitCompleter.completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:27863:12)
+    at Object._asyncRethrow (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3704:17)
+ @ ./src/App.scss 8:6-373 22:17-24 26:7-21 58:25-39 59:36-47 59:50-64 63:6-73:7 64:54-65 64:68-82 70:42-53 70:56-70 72:21-28 83:0-343 83:0-343 84:22-29 84:33-47 84:50-64 61:4-74:5
+ @ ./src/App.tsx 6:0-20
+ @ ./src/index.tsx 7:0-24 11:33-36
+
+ERROR in ./src/common/Footer.scss (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Can't find stylesheet to import.
+  ╷
+1 │ @import "shared/variables";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+  src/common/Footer.scss 1:9  root stylesheet
+SassError: SassError: Can't find stylesheet to import.
+  ╷
+1 │ @import "shared/variables";
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+  src/common/Footer.scss 1:9  root stylesheet
+    at /home/sam/test/test-front/node_modules/sass-loader/dist/index.js:54:16
+    at Function.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:98993:16)
+    at render_closure1.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:84511:12)
+    at _RootZone.runBinary$3$3 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:29540:18)
+    at _FutureListener.handleError$1 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28062:21)
+    at _Future__propagateToListeners_handleError.call$0 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28369:49)
+    at Object._Future__propagateToListeners (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3901:77)
+    at _Future._completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28215:9)
+    at _AsyncAwaitCompleter.completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:27863:12)
+    at Object._asyncRethrow (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3704:17)
+ @ ./src/common/Footer.scss 8:6-388 22:17-24 26:7-21 58:25-39 59:36-47 59:50-64 63:6-73:7 64:54-65 64:68-82 70:42-53 70:56-70 72:21-28 83:0-358 83:0-358 84:22-29 84:33-47 84:50-64 61:4-74:5
+ @ ./src/common/Footer.tsx 4:0-23
+ @ ./src/App.tsx 7:0-37 55:35-41
+ @ ./src/index.tsx 7:0-24 11:33-36
+
+webpack 5.65.0 compiled with 2 errors in 215 ms
+No issues found.
+Compiling...
+Compiled successfully!
+assets by status 6.89 KiB [cached] 1 asset
+assets by chunk 1.59 MiB (name: main)
+  asset static/js/bundle.js 1.58 MiB [emitted] (name: main) 1 related asset
+  asset main.02a3458c87688a6158eb.hot-update.js 19.7 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+assets by path *.json 611 bytes
+  asset asset-manifest.json 583 bytes [emitted]
+  asset main.02a3458c87688a6158eb.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+asset index.html 1.67 KiB [emitted]
+Entrypoint main 1.59 MiB (1.57 MiB) = static/js/bundle.js 1.58 MiB main.02a3458c87688a6158eb.hot-update.js 19.7 KiB 2 auxiliary assets
+cached modules 1.42 MiB [cached] 110 modules
+runtime modules 31.3 KiB 15 modules
+javascript modules 9.39 KiB
+  modules by path ./src/common/ 5.29 KiB
+    ./src/common/Footer.tsx 1.39 KiB [code generated]
+    ./src/common/Footer.scss 3.11 KiB [code generated]
+    ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss 819 bytes [built] [code generated]
+  modules by path ./src/*.scss 4.09 KiB
+    ./src/App.scss 3.05 KiB [code generated]
+    ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/App.scss 1.05 KiB [built] [code generated]
+webpack 5.65.0 compiled successfully in 231 ms
+No issues found.
+Compiling...
+Failed to compile.
+
+SassError: Undefined variable.
+  ╷
+4 │   background-color: $primary;
+  │                     ^^^^^^^^
+  ╵
+  src/common/Footer.scss 4:21  root stylesheet
+assets by status 6.89 KiB [cached] 1 asset
+assets by chunk 1.58 MiB (name: main)
+  asset static/js/bundle.js 1.57 MiB [emitted] (name: main) 1 related asset
+  asset main.1753a165465a1838fc1f.hot-update.js 5.46 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+assets by path *.json 611 bytes
+  asset asset-manifest.json 583 bytes [emitted]
+  asset main.1753a165465a1838fc1f.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+asset index.html 1.67 KiB [emitted]
+Entrypoint main 1.58 MiB (1.56 MiB) = static/js/bundle.js 1.57 MiB main.1753a165465a1838fc1f.hot-update.js 5.46 KiB 2 auxiliary assets
+cached modules 1.42 MiB [cached] 112 modules
+runtime modules 31.3 KiB 15 modules
+javascript modules 4.16 KiB
+  ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/App.scss 1.01 KiB [built] [code generated]
+  ./src/common/Footer.scss 3.11 KiB [code generated]
+  ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss 39 bytes [built] [code generated] [1 error]
+
+ERROR in ./src/common/Footer.scss (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Undefined variable.
+  ╷
+4 │   background-color: $primary;
+  │                     ^^^^^^^^
+  ╵
+  src/common/Footer.scss 4:21  root stylesheet
+SassError: SassError: Undefined variable.
+  ╷
+4 │   background-color: $primary;
+  │                     ^^^^^^^^
+  ╵
+  src/common/Footer.scss 4:21  root stylesheet
+    at /home/sam/test/test-front/node_modules/sass-loader/dist/index.js:54:16
+    at Function.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:98993:16)
+    at render_closure1.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:84511:12)
+    at _RootZone.runBinary$3$3 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:29540:18)
+    at _FutureListener.handleError$1 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28062:21)
+    at _Future__propagateToListeners_handleError.call$0 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28369:49)
+    at Object._Future__propagateToListeners (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3901:77)
+    at _Future._completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28215:9)
+    at _AsyncAwaitCompleter.completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:27863:12)
+    at Object._asyncRethrow (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3704:17)
+ @ ./src/common/Footer.scss 8:6-388 22:17-24 26:7-21 58:25-39 59:36-47 59:50-64 63:6-73:7 64:54-65 64:68-82 70:42-53 70:56-70 72:21-28 83:0-358 83:0-358 84:22-29 84:33-47 84:50-64 61:4-74:5
+ @ ./src/common/Footer.tsx 4:0-23
+ @ ./src/App.tsx 7:0-37 55:35-41
+ @ ./src/index.tsx 7:0-24 11:33-36
+
+webpack 5.65.0 compiled with 1 error in 202 ms
+No issues found.
+Compiling...
+Failed to compile.
+
+SassError: Undefined variable.
+  ╷
+4 │   background-color: $primary;
+  │                     ^^^^^^^^
+  ╵
+  src/common/Footer.scss 4:21  root stylesheet
+assets by status 1.58 MiB [cached] 2 assets
+assets by path . 2.12 KiB
+  asset index.html 1.67 KiB [emitted]
+  asset asset-manifest.json 458 bytes [emitted]
+cached modules 1.43 MiB (javascript) 31.3 KiB (runtime) [cached] 128 modules
+javascript modules 1.05 KiB
+  ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/App.scss 1.01 KiB [built]
+  ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss 39 bytes [built] [1 error]
+
+ERROR in ./src/common/Footer.scss (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss)
+Module build failed (from ./node_modules/sass-loader/dist/cjs.js):
+SassError: Undefined variable.
+  ╷
+4 │   background-color: $primary;
+  │                     ^^^^^^^^
+  ╵
+  src/common/Footer.scss 4:21  root stylesheet
+SassError: SassError: Undefined variable.
+  ╷
+4 │   background-color: $primary;
+  │                     ^^^^^^^^
+  ╵
+  src/common/Footer.scss 4:21  root stylesheet
+    at /home/sam/test/test-front/node_modules/sass-loader/dist/index.js:54:16
+    at Function.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:98993:16)
+    at render_closure1.call$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:84511:12)
+    at _RootZone.runBinary$3$3 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:29540:18)
+    at _FutureListener.handleError$1 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28062:21)
+    at _Future__propagateToListeners_handleError.call$0 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28369:49)
+    at Object._Future__propagateToListeners (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3901:77)
+    at _Future._completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:28215:9)
+    at _AsyncAwaitCompleter.completeError$2 (/home/sam/test/test-front/node_modules/sass/sass.dart.js:27863:12)
+    at Object._asyncRethrow (/home/sam/test/test-front/node_modules/sass/sass.dart.js:3704:17)
+ @ ./src/common/Footer.scss 8:6-388 22:17-24 26:7-21 58:25-39 59:36-47 59:50-64 63:6-73:7 64:54-65 64:68-82 70:42-53 70:56-70 72:21-28 83:0-358 83:0-358 84:22-29 84:33-47 84:50-64 61:4-74:5
+ @ ./src/common/Footer.tsx 4:0-23
+ @ ./src/App.tsx 7:0-37 55:35-41
+ @ ./src/index.tsx 7:0-24 11:33-36
+
+webpack 5.65.0 compiled with 1 error in 132 ms
+No issues found.
+Compiling...
+Compiled successfully!
+assets by status 6.89 KiB [cached] 1 asset
+assets by chunk 1.58 MiB (name: main)
+  asset static/js/bundle.js 1.58 MiB [emitted] (name: main) 1 related asset
+  asset main.06aafea3895b5595e881.hot-update.js 7.04 KiB [emitted] [immutable] [hmr] (name: main) 1 related asset
+assets by path *.json 611 bytes
+  asset asset-manifest.json 583 bytes [emitted]
+  asset main.06aafea3895b5595e881.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+asset index.html 1.67 KiB [emitted]
+Entrypoint main 1.58 MiB (1.57 MiB) = static/js/bundle.js 1.58 MiB main.06aafea3895b5595e881.hot-update.js 7.04 KiB 2 auxiliary assets
+cached modules 1.42 MiB [cached] 112 modules
+runtime modules 31.3 KiB 15 modules
+javascript modules 4.84 KiB
+  ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/App.scss 1.02 KiB [built] [code generated]
+  ./src/common/Footer.scss 3.11 KiB [code generated]
+  ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[1].oneOf[7].use[3]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[7].use[4]!./src/common/Footer.scss 728 bytes [built] [code generated]
+webpack 5.65.0 compiled successfully in 194 ms
+No issues found.
