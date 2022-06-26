@@ -75,16 +75,17 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: app
     steps:
       - name: Download a single artifact
         uses: actions/download-artifact@v3
         with:
           name: build
+      - name: List directory
+        run: ls && echo $PWD
       - uses: jakejarvis/s3-sync-action@master
         env:
           AWS_S3_BUCKET: votre-nom-sipios-formation-s3 # ${{ secrets.AWS_S3_BUCKET }} # from output
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_DEFAULT_REGION }}   # optional: defaults to us-east-1
-          SOURCE_DIR: '/home/runner/work/devops-terraform-1/devops-terraform-1/build'      
+          SOURCE_DIR: 'build'      
