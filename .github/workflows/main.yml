@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     defaults:
       run:
@@ -26,7 +26,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Generate env file
-      run: echo access_key=$AWS_ACCESS_KEY_ID >> env.tfvars && echo secret_key=$AWS_SECRET_ACCESS_KEY >> env.tfvars && cat env.tfvars
+      run: echo access_key=$AWS_ACCESS_KEY_ID >> env.tfvars && echo secret_key=$AWS_SECRET_ACCESS_KEY >> env.tfvars
     - name: terraform init
       run: terraform init
     - name: Terraform Format
