@@ -29,10 +29,12 @@ jobs:
       run: terraform init
     - name: Terraform Format
       run: terraform fmt -check
+    - name: Write env file
+      run: echo "access_key = $AWS_ACCESS_KEY_ID\nsecret_key = $AWS_SECRET_ACCESS_KEY" >> env.tfvars && cat env.tfvars
     - name: Terraform Plan
-      run: terraform plan -input=false
+      run: terraform plan -input=false -var-file env.tfvars
     - name: Terraform Apply
-      run: terraform apply -auto-approve -input=false
+      run: terraform apply -auto-approve -input=false -var-file env.tfvars
       
   test:
     runs-on: ubuntu-latest
@@ -57,6 +59,8 @@ jobs:
         working-directory: app
     steps:
     - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: npm ci
     - name: Build the website
       run: npm run build
     - uses: actions/upload-artifact@v3
