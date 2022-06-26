@@ -21,7 +21,7 @@ variable "s3" {
   description = "Configuration for your Website hosting S3"
   default = {
     "vars" = {
-      arn  = "arn:aws:s3:::votre-nom-sipios-formation-s3"
+      arn  = "arn:aws:s3:::samy-nalbandian-sipios-formation-s3"
       name = "samy-nalbandian-sipios-formation-s3"
     }
   }
