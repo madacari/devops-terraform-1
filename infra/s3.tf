@@ -27,6 +27,10 @@ output "website_domain" {
   value = module.sipios_formation_s3.s3_bucket_website_domain
 }
 
+output "BUCKET_NAME" {
+  value = var.s3.vars.name
+}
+
 output "website_endpoint" {
   value = module.sipios_formation_s3.s3_bucket_website_endpoint
 }

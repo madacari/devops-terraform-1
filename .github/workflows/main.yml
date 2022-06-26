@@ -22,6 +22,8 @@ jobs:
       run:
         shell: bash
         working-directory: infra
+    outputs:
+      bucket_name: ${{ steps.export-rds.outputs.bucket_name }}
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -35,6 +37,9 @@ jobs:
       run: terraform plan -input=false -var-file env.tfvars
     - name: Terraform Apply
       run: terraform apply -auto-approve -input=false -var-file env.tfvars
+    - name: Export Bucket name
+      id: export-bucket
+      run: echo "::set-output name=bucket_name::$(terraform output BUCKET_NAME)"
       
   test:
     runs-on: ubuntu-latest
@@ -82,7 +87,7 @@ jobs:
           name: build
       - uses: jakejarvis/s3-sync-action@master
         env:
-          AWS_S3_BUCKET: votre-nom-sipios-formation-s3 # ${{ secrets.AWS_S3_BUCKET }} # from output
+          AWS_S3_BUCKET: ${{ needs.infra.outputs.bucket_name }} # ${{ secrets.AWS_S3_BUCKET }} # from output
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_DEFAULT_REGION }}   # optional: defaults to us-east-1   
