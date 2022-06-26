@@ -1,7 +1,7 @@
 import { Alert, Button, Snackbar } from "@mui/material";
 import { useState } from "react";
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import { Role, Sipionaute, SipionauteUtils } from "./BasicTable";
+import { Sipionaute, SipionauteUtils } from "./BasicTable";
 import NewSipionauteDialog from "./NewSipionauteDialog";
 
 export default function AddButton(sipionauteUtils: SipionauteUtils) {
