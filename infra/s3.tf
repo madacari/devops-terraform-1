@@ -12,8 +12,8 @@ module "sipios_formation_s3" {
   }
 
   website = {
-    index_document = "index.html"
-    error_document = "index.html" # On aura surement un fichier de fallback
+    index_document = "FIXME"
+    error_document = "FIXME" # On aura surement un fichier de fallback
   }
 
   # Policies
