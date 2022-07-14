@@ -11,11 +11,6 @@ module "sipios_formation_s3" {
     enabled = false # Chose qu'on va vouloir faire en production
   }
 
-  website = {
-    index_document = "index.html"
-    error_document = "index.html" # On aura surement un fichier de fallback
-  }
-
   # Policies
   attach_policy = true
   policy        = data.aws_iam_policy_document.sipios_formation_s3_policies.json
