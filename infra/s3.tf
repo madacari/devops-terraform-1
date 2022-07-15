@@ -11,6 +11,11 @@ module "sipios_formation_s3" {
     enabled = false # Chose qu'on va vouloir faire en production
   }
 
+  website = {
+    index_document = "index.html"
+    error_document = "index.html" # En tant normal on a un fichier dédié
+  }
+
   # Policies
   attach_policy = true
   policy        = data.aws_iam_policy_document.sipios_formation_s3_policies.json

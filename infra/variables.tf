@@ -21,8 +21,8 @@ variable "s3" {
   description = "Configuration for your Website hosting S3"
   default = {
     "vars" = {
-      arn  = "arn:aws:s3:::nouveau-nom" # Ca doit être le même nom que celui mit en dessous dans "name"
-      name = "nouveau-nom"
+      arn  = "arn:aws:s3:::manuelc" # Ca doit être le même nom que celui mit en dessous dans "name"
+      name = "manuelc"
     }
   }
 }
